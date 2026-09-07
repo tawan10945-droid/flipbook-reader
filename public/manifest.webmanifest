@@ -1,18 +1,33 @@
 {
-  "name": "FlipBook Reader 3D",
+  "name": "FlipBook 3D Reader",
   "short_name": "FlipBook",
   "description": "อ่านหนังสือและเอกสาร PDF แบบ 3D Flipbook เสมือนจริง รองรับ iPhone 15 Pro Max",
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
   "orientation": "any",
-  "background_color": "#0f1117",
-  "theme_color": "#0f1117",
+  "background_color": "#090a0f",
+  "theme_color": "#090a0f",
+  "categories": ["books", "productivity", "utilities"],
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon.svg",
       "sizes": "192x192 512x512",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }

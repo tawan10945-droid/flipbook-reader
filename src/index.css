@@ -16,12 +16,16 @@
     min-height: 100vh;
     min-height: 100dvh;
     overflow-x: hidden;
-    background-color: #0f1117;
+    overscroll-behavior: none;
+    -webkit-overflow-scrolling: touch;
+    background-color: #090a0f;
     color: #e2e8f0;
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
     -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
     user-select: none;
     -webkit-user-select: none;
+    touch-action: manipulation;
   }
 }
 

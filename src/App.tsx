@@ -6,6 +6,7 @@ import type { RenderProgress } from './services/pdfService';
 import { generateSampleBookPages } from './services/sampleBook';
 import { Bookshelf } from './components/Bookshelf';
 import { FlipBookViewer } from './components/FlipBookViewer';
+import { IosInstallBanner } from './components/IosInstallBanner';
 
 export function App() {
   const [books, setBooks] = useState<BookMeta[]>([]);
@@ -160,6 +161,9 @@ export function App() {
           onRefreshBooks={loadBooks}
         />
       )}
+
+      {/* iOS App Install Reminder */}
+      <IosInstallBanner />
     </div>
   );
 }
